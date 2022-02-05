@@ -2,7 +2,7 @@
 
 **Code Name**
 
-**S.E.G.A** (**S**tudents **E**xploring **G**aming & **A**nxiety) 
+**S.E.G.A** (**S**tudents **E**xploring **G**aming & **A**nxiety)
 
 **Authors**
 
@@ -67,7 +67,7 @@ Our group intend to use the dataset:
 
 * Who or what is represented in the data? What is an observation? What variables are included (and excluded)?
 The dataset contains about 13,000 data entries from gamers’ survey results and has 13 main variables of interest.
-    
+
     **Variables of Interest**
 
     |Variable[s]|   Type|     Explanation|
@@ -85,7 +85,7 @@ The dataset contains about 13,000 data entries from gamers’ survey results and
     |Work|          char|      Occupation status|
     |Degree|        char|      Highest degree|
     |Gender|        char|      Gender|
-    
+
     The data is collected from 13464 gamers (12699 male, 713 female, 52 other) between 18 and 63 years. Participants resided in 109 different countries with most of the participants coming from the USA, Germany, the UK, and Canada. The participants responded to a call placed on Reddit and the survey was implemented in Google Forms.
 
 * Who collected the data? When? For what purpose? How was the data collection effort funded? Who is likely to benefit from the data or make money?
@@ -95,15 +95,15 @@ The dataset contains about 13,000 data entries from gamers’ survey results and
     (General and Experimental Psychology, Ludwig-Maximilians-Universität München, Munich, Germany)
 
     (Scene Grammar Lab, Goethe University Frankfurt, Frankfurt am Main, Germany)
-    
+
     The dataset is gathered with a purpose of allowing more investigation of the relationship between excessive video game usage, well-being, and psychological disorders, and the authors declare that the research was conducted in the absence of any commercial or financial relationships that could be construed as a potential conflict of interest.
 
 * How was the data validated and held secure? Is it credible and trustworthy?
-    
+
     The dataset is validated as the full survey, dataset, preprocessing, as well as example analysis scripts are openly available online and is a product of a peer-reviewed research project.
 
 * How did you obtain the data? Do you credit the source of the data?
-    
+
     As the dataset is open source, our group will use the dataset freely from its publishing site and credit the source.
 
 ## Expected Implications
@@ -111,9 +111,29 @@ With more detailed relationships between gaming and mental health proved by data
 For policymakers, on the other hand, more restrictions could be applied to game companies to ensure they prioritize mental health in the entire life-cycle of game-development and operation. For instance, policies that mandate mental health support resources could be made, and potentially, an annual report on mental health profiles of the player-base could be requested by government officials.
 
 ## Limitations
-By examining the dataset, our group noticed that the data is mainly from male gamers; also, the gamers that participated in this survey are mainly younger generations and from the western countries. 
+By examining the dataset, our group noticed that the data is mainly from male gamers; also, the gamers that participated in this survey are mainly younger generations and from the western countries.
 Also, as the dataset is mainly gathered from Reddit and the survey is voluntary, there might be unforeseen limitations to the survey population.
 As a result, the conclusion may not apply well to all players, especially female players, older generations, and players in other regions; thus, we need to be careful when making conclusions about gamers in general.
+
+## Acknowledgements
+
+We would like to thank Marian Sauter and Dejan Draschkow for collecting the data and sharing it online for free– this project would not have been possible without their expansive data set and research efforts.
+
+## References
+
+Bhargava, H. (2021, October 5). Hiding in plain sight: The impact of gaming on Mental Health. Forbes. Retrieved February 4, 2022, from https://www.forbes.com/sites/hansabhargava/2021/10/04/hiding-in-plain-sight-the-impact-of-gaming-on-mental-health/?sh=7f9b1325278d
+
+Kowal, M., Conroy, E., Ramsbottom, N., Smithies, T., Toth, A., & Campbell, M. (2021). Gaming Your Mental Health: A Narrative Review on Mitigating Symptoms of Depression and Anxiety Using Commercial Video Games. JMIR serious games, 9(2), e26575. https://doi.org/10.2196/26575
+
+Granic, I., Lobel, A., & Engels, R. C. M. E. (2014). The benefits of playing video games. American Psychologist, 69(1), https://doi.apa.org/doiLanding?doi=10.1037%2Fa0034857
+
+Draschkow, D., & Sauter, M. (2017, October 30). Gaming habits and psychological well-being: An international dataset about the anxiety, life satisfaction and social phobia of over 13000 gamers. OSF. Retrieved February 4, 2022, from https://osf.io/vyr5f/
+
+Grinspoon, P., MD. (2020, December 22). The health effects of too much gaming. Harvard Health. https://www.health.harvard.edu/blog/the-health-effects-of-too-much-gaming-2020122221645
+
+## Appendix A: Questions
+
+No questions as this stage in the project.
 
 
 <!-- # Title of your Project: Project Proposal
