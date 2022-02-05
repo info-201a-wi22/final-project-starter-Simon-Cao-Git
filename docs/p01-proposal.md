@@ -1,22 +1,8 @@
-# Title of your Project: Project Proposal
-
-**TODO**: Edit this file. Your project proposal goes here. Save and delete the developer notes when done.
-
-## Developer Notes
-
-* **Where is the project brief?**  [`../instructions/project-design-brief.pdf`](../instructions/project-design-brief.pdf).
-* **Making Progress**: We understand this work might be difficult. Also, we understand that your project ideas might not be completely worked out. So, we ask that you do the best you can. You will receive specific guidance from your TA and constructive feedback. We are confident that you will succeed!
-* **What should be included in the proposal?** Every proposal will be different. It depends on your particular project.  That said, in the table below you will find the expected report elements.  It is important that you engage with and respond to the the Design Brief.
-* **How should the proposal be formatted?** You should format your proposal using Markdown in this file. You should aim for a professional presentation - clear, concise, interesting, and free of spelling and grammatical errors.
-* **What headings should we use?** As needed, the suggested headings below can be revised and new headings and sub-headings can be added. Please use headings, bullet lists, tables, figures, and other markdown code effectively - seek a professional presentation.
-* **Finishing up.** When you are finished writing and formatting your proposal, save these developer notes(they might useful in the future). Then, delete them.
-* **Questions?** If you have questions, please ask your TA or post on Teams.
-
 # Head in the Game: Examining the Relationship Between Gaming and Mental Health
 
 **Code Name**
 
-S.E.G.A (Students Exploring Gaming & Anxiety)
+**S.E.G.A** (**S**tudents **E**xploring **G**aming & **A**nxiety) 
 
 **Authors**
 
@@ -26,7 +12,7 @@ S.E.G.A (Students Exploring Gaming & Anxiety)
 |Lilah Favour |<lfavour@uw.edu>|
 |Elora Hoberecht |<elorahob@uw.edu>|
 |Xuanyu Chen |<xuanyc2@uw.edu>|
-|Han |<hanw27@uw.edu>|
+|Han Wang|<hanw27@uw.edu>|
 
 **Affiliation**
 
@@ -66,10 +52,7 @@ Harms: It would not be a stretch to imagine scenarios in which the information i
 
 Benefits: This data may benefit people struggling with mental health disorders. We hope that our findings can benefit those struggling with mental health disorders or suffering with the effects of social isolation. Our findings may inform mental health practitioners on the ways in which gaming can be a tool to help mitigate the symptoms of these disorders, or inspire parents to enforce healthy gaming habits with children and adolescents.
 
-## 3.0 Research questions
-
-**Research questions**
-
+## Research questions
 How does gaming affect mental health?
 
 Do different age groups matter with the relationship between gaming and mental health?
@@ -78,10 +61,77 @@ How does gender affect the relationship between gaming and mental health?
 
 Do different countries or environments affect the relationship between gaming and mental health?
 
-These questions are important because first, if we want to find valid data, we have to think about different groups. For example, an answer might work for one group but not for another. After collecting datas using the survey, it is important to separate the data using different groups of people, so we can find if there is any pattern. Also, there might be different answers for different groups, too, for example, one age group might think that online gaming gives them anxiety and another might not.
+## The Dataset
+Our group intend to use the dataset:
+[Gaming Habits and Psychological Well-being: An international dataset about the Anxiety, Life Satisfaction and Social Phobia of over 13000 gamers](https://osf.io/vyr5f/).
+
+* Who or what is represented in the data? What is an observation? What variables are included (and excluded)?
+The dataset contains about 13,000 data entries from gamers’ survey results and has 13 main variables of interest.
+    
+    **Variables of Interest**
+
+    |Variable[s]|   Type|     Explanation|
+    |---|---|---|
+    |Hours|         num|       Hours played|
+    |streams|       num|       Additional hours dealing with games except playing|
+    |Game|          char|      Game played the most|
+    |SPIN_T and SPIN_T[1-17]|        num|       Social Phobia Inventory (SPIN) scores related data|
+    |GAD_T and GAD[1-7]|       num|       Generalized Anxiety Disorder Screener (GAD-7) scores related data|
+    |SWL_T and SWL[1-5]|         num|       Satisfaction with Life Scale (SWL) scores related data|
+    |Narcissism|    num|       Score of the Single Item Narcissism Scale (SINS)|
+    |Birthplace|    char|      Country of Birth|
+    |Residence|     char|      Country of Residence|
+    |Age|           num|       Age|
+    |Work|          char|      Occupation status|
+    |Degree|        char|      Highest degree|
+    |Gender|        char|      Gender|
+    
+    The data is collected from 13464 gamers (12699 male, 713 female, 52 other) between 18 and 63 years. Participants resided in 109 different countries with most of the participants coming from the USA, Germany, the UK, and Canada. The participants responded to a call placed on Reddit and the survey was implemented in Google Forms.
+
+* Who collected the data? When? For what purpose? How was the data collection effort funded? Who is likely to benefit from the data or make money?
+
+    The data was collected in 2017 by 2 university researchers from Germany: Marian Sauter and Dejan Draschkow.
+
+    (General and Experimental Psychology, Ludwig-Maximilians-Universität München, Munich, Germany)
+
+    (Scene Grammar Lab, Goethe University Frankfurt, Frankfurt am Main, Germany)
+    
+    The dataset is gathered with a purpose of allowing more investigation of the relationship between excessive video game usage, well-being, and psychological disorders, and the authors declare that the research was conducted in the absence of any commercial or financial relationships that could be construed as a potential conflict of interest.
+
+* How was the data validated and held secure? Is it credible and trustworthy?
+    
+    The dataset is validated as the full survey, dataset, preprocessing, as well as example analysis scripts are openly available online and is a product of a peer-reviewed research project.
+
+* How did you obtain the data? Do you credit the source of the data?
+    
+    As the dataset is open source, our group will use the dataset freely from its publishing site and credit the source.
+
+## Expected Implications
+With more detailed relationships between gaming and mental health proved by data, technologists and designers (from game companies) could potentially provide more support in response to the mental health issue in gaming experience. For example, game developers could adopt game designs that prevent swearing and ease blaming between players; similarly, mechanisms that encourage more cooperation and provide more positive feedback to players could be built into existing frameworks.
+For policymakers, on the other hand, more restrictions could be applied to game companies to ensure they prioritize mental health in the entire life-cycle of game-development and operation. For instance, policies that mandate mental health support resources could be made, and potentially, an annual report on mental health profiles of the player-base could be requested by government officials.
+
+## Limitations
+By examining the dataset, our group noticed that the data is mainly from male gamers; also, the gamers that participated in this survey are mainly younger generations and from the western countries. 
+Also, as the dataset is mainly gathered from Reddit and the survey is voluntary, there might be unforeseen limitations to the survey population.
+As a result, the conclusion may not apply well to all players, especially female players, older generations, and players in other regions; thus, we need to be careful when making conclusions about gamers in general.
 
 
-|Element | Brief Description|
+<!-- # Title of your Project: Project Proposal
+
+**TODO**: Edit this file. Your project proposal goes here. Save and delete the developer notes when done.
+
+## Developer Notes
+
+* **Where is the project brief?**  [`../instructions/project-design-brief.pdf`](../instructions/project-design-brief.pdf).
+* **Making Progress**: We understand this work might be difficult. Also, we understand that your project ideas might not be completely worked out. So, we ask that you do the best you can. You will receive specific guidance from your TA and constructive feedback. We are confident that you will succeed!
+* **What should be included in the proposal?** Every proposal will be different. It depends on your particular project.  That said, in the table below you will find the expected report elements.  It is important that you engage with and respond to the the Design Brief.
+* **How should the proposal be formatted?** You should format your proposal using Markdown in this file. You should aim for a professional presentation - clear, concise, interesting, and free of spelling and grammatical errors.
+* **What headings should we use?** As needed, the suggested headings below can be revised and new headings and sub-headings can be added. Please use headings, bullet lists, tables, figures, and other markdown code effectively - seek a professional presentation.
+* **Finishing up.** When you are finished writing and formatting your proposal, save these developer notes(they might useful in the future). Then, delete them.
+* **Questions?** If you have questions, please ask your TA or post on Teams. -->
+
+
+<!-- |Element | Brief Description|
 |---------------| --------------
 |Code name | Give your project a _code name_, a short, evocative name for efficiently referring to your project. Your code name does not change! Examples: _Jazz-4_, _Rocking Fish_, etc. |
 |Project title| Give your project a concise, interesting title that summarizes the entirety of your project. (Your title can change on subsequent deliverables.) |
@@ -98,4 +148,4 @@ These questions are important because first, if we want to find valid data, we h
 |6.0 Limitations | What limitations might you need to address? Briefly discuss. (about 150 words) |
 |Acknowledgements | Is there anyone you would like to thank? A librarian who helped you with your research? A Teaching Assistant? A friend who helped you find your data? Say thank you in this section.|
 |References | Include citations to your three references. See 2.0 Introduction. If you like, you can cite more than three references.  Please use a standard citation style of your choice.  See [Citing Sources](https://guides.lib.uw.edu/research/citations) at the UW Library. |
-|Appendix A: Questions| Do you have questions for your TA or instructor?  Include them here.|
+|Appendix A: Questions| Do you have questions for your TA or instructor?  Include them here.| -->
