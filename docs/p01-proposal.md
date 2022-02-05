@@ -1,20 +1,49 @@
-# Title of your Project: Project Proposal 
+# Title of your Project: Project Proposal
 
 **TODO**: Edit this file. Your project proposal goes here. Save and delete the developer notes when done.
 
 ## Developer Notes
 
 * **Where is the project brief?**  [`../instructions/project-design-brief.pdf`](../instructions/project-design-brief.pdf).
-* **Making Progress**: We understand this work might be difficult. Also, we understand that your project ideas might not be completely worked out. So, we ask that you do the best you can. You will receive specific guidance from your TA and constructive feedback. We are confident that you will succeed! 
-* **What should be included in the proposal?** Every proposal will be different. It depends on your particular project.  That said, in the table below you will find the expected report elements.  It is important that you engage with and respond to the the Design Brief. 
-* **How should the proposal be formatted?** You should format your proposal using Markdown in this file. You should aim for a professional presentation - clear, concise, interesting, and free of spelling and grammatical errors. 
-* **What headings should we use?** As needed, the suggested headings below can be revised and new headings and sub-headings can be added. Please use headings, bullet lists, tables, figures, and other markdown code effectively - seek a professional presentation. 
+* **Making Progress**: We understand this work might be difficult. Also, we understand that your project ideas might not be completely worked out. So, we ask that you do the best you can. You will receive specific guidance from your TA and constructive feedback. We are confident that you will succeed!
+* **What should be included in the proposal?** Every proposal will be different. It depends on your particular project.  That said, in the table below you will find the expected report elements.  It is important that you engage with and respond to the the Design Brief.
+* **How should the proposal be formatted?** You should format your proposal using Markdown in this file. You should aim for a professional presentation - clear, concise, interesting, and free of spelling and grammatical errors.
+* **What headings should we use?** As needed, the suggested headings below can be revised and new headings and sub-headings can be added. Please use headings, bullet lists, tables, figures, and other markdown code effectively - seek a professional presentation.
 * **Finishing up.** When you are finished writing and formatting your proposal, save these developer notes(they might useful in the future). Then, delete them.
 * **Questions?** If you have questions, please ask your TA or post on Teams.
 
+# Head in the Game: Examining the Relationship Between Gaming and Mental Health
+
+**Code Name**
+
+S.E.G.A (Students Exploring Gaming & Anxiety)
+
+**Authors**
+
+|Name|Email|
+|-|-|
+|Simon Cao |<purunc@uw.edu>|
+|Lilah Favour |<lfavour@uw.edu>|
+|Elora Hoberecht |<elorahob@uw.edu>|
+|Xuanyu Chen |<xuanyc2@uw.edu>|
+|Han |<hanw27@uw.edu>|
+
+**Affiliation**
+
+INFO-201 Winter 2022: Technical Foundations of Informatics
+
+The Information School - University of Washington
+
+## Abstract
+
+Our main question is what is the relationship between gaming and mental health, specifically anxiety. This question is important because gaming has become a popular pastime among people with various backgrounds and people who play games have often been characterized as antisocial and awkward, traits also associated with anxiety. To address this question we will perform various analyses on a dataset containing survey responses from gamers about their gaming habits, mental health, and socioeconomic background to see if there really is a trend.
+
+## Keywords
+Anxiety, Mental Health, Online Gaming
+
 |Element | Brief Description|
 |---------------| --------------
-|Code name | Give your project a _code name_, a short, evocative name for efficiently referring to your project. Your code name does not change! Examples: _Jazz-4_, _Rocking Fish_, etc. | 
+|Code name | Give your project a _code name_, a short, evocative name for efficiently referring to your project. Your code name does not change! Examples: _Jazz-4_, _Rocking Fish_, etc. |
 |Project title| Give your project a concise, interesting title that summarizes the entirety of your project. (Your title can change on subsequent deliverables.) |
 |Authors | Names of your team members and contact information (email addresses). |
 |Affiliation |  INFO-201: Technical Foundations of Informatics - The Information School - University of Washington |
