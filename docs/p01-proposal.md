@@ -41,6 +41,11 @@ Our main question is what is the relationship between gaming and mental health, 
 ## Keywords
 Anxiety, Mental Health, Online Gaming
 
+## Introduction
+Despite the rapid advancement of technology and online environments in many aspects of our daily lives, video games are continuing to develop exponentially, and gaming communities are also growing. Along with being fun and entertaining, gaming can help people connect with each other, creating a sense of community as they work together to complete common tasks. Half of all Americans, 164 million people, play video games, also called gaming. Gaming isn't just for teens, as popular belief would have you believe. According to a survey in 2019, only 21% of gamers were under 18 years old (Grinspoon, 2020). However, despite the benefits of gaming (even as it becomes a competitive sport on many college campuses), too much gaming is linked to health risks, and mental health issues arise among this growing body of diverse gamers.
+In this project, we are going to perform an analysis based on results from a series of questions, and also try to ravel out the relationship between the gaming habits of gamers and the latent mental health issues.
+
+
 |Element | Brief Description|
 |---------------| --------------
 |Code name | Give your project a _code name_, a short, evocative name for efficiently referring to your project. Your code name does not change! Examples: _Jazz-4_, _Rocking Fish_, etc. |
