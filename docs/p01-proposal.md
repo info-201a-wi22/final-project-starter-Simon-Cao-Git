@@ -45,6 +45,28 @@ Anxiety, Mental Health, Online Gaming
 Despite the rapid advancement of technology and online environments in many aspects of our daily lives, video games are continuing to develop exponentially, and gaming communities are also growing. Along with being fun and entertaining, gaming can help people connect with each other, creating a sense of community as they work together to complete common tasks. Half of all Americans, 164 million people, play video games, also called gaming. Gaming isn't just for teens, as popular belief would have you believe. According to a survey in 2019, only 21% of gamers were under 18 years old (Grinspoon, 2020). However, despite the benefits of gaming (even as it becomes a competitive sport on many college campuses), too much gaming is linked to health risks, and mental health issues arise among this growing body of diverse gamers.
 In this project, we are going to perform an analysis based on results from a series of questions, and also try to ravel out the relationship between the gaming habits of gamers and the latent mental health issues.
 
+## Design Situation
+
+**Project Framing:**
+
+We hope to better understand how mental health and gaming habits are connected. Some research in the past has indicated that excessive gaming can contribute to negative mood and psychological well-being, such as increased depression/anxiety or the development of gaming addictions (Bhargava, H., 2021, Kowal, M., et al., 2021), while many users and other researchers find that gaming can serve as a very helpful stress reliever and help gamers relax or socialize with friends (Granic, I, et al., 2014).
+
+**Human Values:**
+
+The human values most important to our group in this project include human welfare and identity. We understand that for a lot of people who play games, being a ‘gamer’ is an important identity and valuable social community where people find belonging. Additionally, we hope to better understand how gaming impacts mental health, to help future researchers, designers, and practitioners make more informed decisions when choosing what kinds of games to play or modifying their own gaming habits to improve their overall well-being.
+
+**Stakeholders:**
+
+Gamers and game developers would be direct stakeholders, as they could be directly impacted by our findings and may find this data very useful. Members of the gaming community can use this information when deciding which games to play and how to play them, and developers may use this information to help facilitate healthy habits or create interactive worlds that minimize any harm and maximize any benefits that gaming provides to their players. Mental healthcare providers may also benefit from the findings/conclusions of this project, as it may provide new insights into how to best treat patients with conditions like depression and anxiety, or serve as a tool to help individuals struggling with social isolation (Kowal, M., 2021).
+Our indirect stakeholders include children and teens, who may not interact directly with our project, but may be impacted by our findings, as nearly 97% of children in the US play some type of video game for at least an hour a day (Granic, I., 2014).
+
+**Harms and Benefits:**
+
+Harms: It would not be a stretch to imagine scenarios in which the information in our project could be potentially useful to corporations seeking to find new ways of marketing their games or gaming products to consumers, and those struggling with mood disorders or feeling especially isolated may be particularly prone to manipulation in this way.
+
+Benefits: This data may benefit people struggling with mental health disorders. We hope that our findings can benefit those struggling with mental health disorders or suffering with the effects of social isolation. Our findings may inform mental health practitioners on the ways in which gaming can be a tool to help mitigate the symptoms of these disorders, or inspire parents to enforce healthy gaming habits with children and adolescents.
+
+
 
 |Element | Brief Description|
 |---------------| --------------
