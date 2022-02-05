@@ -69,10 +69,15 @@ Benefits: This data may benefit people struggling with mental health disorders. 
 ## 3.0 Research questions
 
 **Research questions**
+
 How does gaming affect mental health?
+
 Do different age groups matter with the relationship between gaming and mental health?
+
 How does gender affect the relationship between gaming and mental health?
+
 Do different countries or environments affect the relationship between gaming and mental health?
+
 These questions are important because first, if we want to find valid data, we have to think about different groups. For example, an answer might work for one group but not for another. After collecting datas using the survey, it is important to separate the data using different groups of people, so we can find if there is any pattern. Also, there might be different answers for different groups, too, for example, one age group might think that online gaming gives them anxiety and another might not.
 
 
