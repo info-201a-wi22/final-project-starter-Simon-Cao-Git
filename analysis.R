@@ -35,31 +35,30 @@ gaming_df <- OG_df %>%
   summarise(Gender, Age, GAD_T, SWL_T, SPIN_T, Game, streams, Hours, Playstyle)
 
   
-# Compute totals of male, female, and 'other' genders.
+# Compute totals of male, female and 'other' genders.
   num_male <- sum(gaming_df$Gender == "Male")
-  num_other <- sum(gaming_df$Gender != "Male")
-
-  prop_men <- num_male / num_other # 13 men for every non-male respondent!
   
-
-# Compute avg mental health scores.
-  avg_anxiety <- mean(gaming_df$GAD_T, na.rm = TRUE) # Score < 8 = "low anxiety risk"
-  avg_satisfaction <- mean(gaming_df$SWL_T, na.rm = TRUE) # Score < 20 = "Slightly below average"
-  avg_phobia <- mean(gaming_df$SPIN_T, na.rm = TRUE) # Score <= 20 = "Low social phobia risk"
- 
+  # I put female and "other" responses together because there is so little data 
+  # and it was efficient for calculating proportion of men.
+  num_other <- sum(gaming_df$Gender != "Male")  
+  
   
 # A function that takes in the gaming dataset and returns a list summary of information about it:
   summary_info <- list()
-  summary_info$prop_men <- round((num_male / num_other))
-  summary_info$avg_time <- round(mean(gaming_df$streams + gaming_df$Hours, na.rm = TRUE))
-  summary_info$avg_age <- round(mean(gaming_df$Age, na.rm = TRUE))
+  summary_info$prop_men <- round((num_male / num_other)) # 13 : 1 
+  summary_info$avg_time <- round(mean(gaming_df$streams + gaming_df$Hours, na.rm = TRUE)) # 31 hours
+  summary_info$avg_age <- round(mean(gaming_df$Age, na.rm = TRUE)) # 21 years old
   summary_info$most_popular_game <- gaming_df %>%
       group_by(Game) %>%
       count(Game) %>%
       ungroup(Game) %>%
       filter(n == max(n)) %>%
-      pull(Game)
+      pull(Game) #League of Legends
   summary_info$num_multiplayer <- sum(grepl("Multi", gaming_df$Playstyle))
+  # The following computes avg mental health scores. 
+  summary_info$avg_anxiety <- round(mean(gaming_df$GAD_T, na.rm = TRUE)) # Score < 8 = "low anxiety risk"
+  summary_info$avg_satisfaction <- round(mean(gaming_df$SWL_T, na.rm = TRUE)) # Score < 20 = "Slightly below average"
+  summary_info$avg_phobia <- round(mean(gaming_df$SPIN_T, na.rm = TRUE)) # Score <= 20 = "Low social phobia risk"
 
 
   
