@@ -2,7 +2,7 @@
 
 In our project, we use the following data files:
 
-### Data files (TODO: Update/delete)
+### Data files
 |Data File Name | Brief Description|
 |---------------| -----------------|
 |[GamingStudy_data.csv](./GamingStudy_data) | This file contains data from a survey for gamers posted on Reddit. It contains information on gaming habits and demographics, as well as answers to anxiety diagnostic tests.
