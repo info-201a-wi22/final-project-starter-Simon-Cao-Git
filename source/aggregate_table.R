@@ -1,13 +1,13 @@
 # aggregate_table
 
+# load required library
 library(dplyr)
 
-unfiltered_data <- read.csv("https://osf.io/ru5kc/download",header = TRUE)
+# Load the filtered US data
+US_data <- read.csv("../data/GamingStudy_filtered.csv")
 
-US_data <- unfiltered_data %>%
-  filter(Residence == "USA")
-
-agg_table_data <- US_data %>%
+# group by platforms and calculate summary data for aggregate table
+agg_table <- US_data %>%
   group_by(Platform) %>%
   summarise(TotalPlayerCount = n(), 
             MalePlayerCount = sum(Gender == "Male"), 
@@ -17,6 +17,4 @@ agg_table_data <- US_data %>%
             AverageSWLScore = mean(SWL_T),
             AverageSPINScore = mean(SPIN_T, na.rm = TRUE)
             )
-
-agg_table <- table(agg_table_data)
 

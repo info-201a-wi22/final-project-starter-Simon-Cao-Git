@@ -4,7 +4,7 @@ library("dplyr")
 library("ggplot2")
 
 # Reads in csv filtered for USA residents only into a data frame
-gamingStudy <- read.csv("data/GamingStudy_filtered.csv",
+gamingStudy <- read.csv("../data/GamingStudy_filtered.csv",
                         stringsAsFactors = FALSE)
 
 # Takes gamingStudy and makes 3 data frames, 1 for each gender option. The data
@@ -37,8 +37,8 @@ all_genders <- full_join(female, male) %>%
 
 # Plots a scatter plot of the GAD assessment scores by the average hours of
 # games played, colored by gender
-ggplot(all_genders, aes(x = GAD_T, y = avg_hours, color = Gender)) +
-  geom_point() +
-  geom_smooth(method = lm, se = FALSE) +
+GAD_scatterplot <- ggplot(all_genders, aes(x = GAD_T, y = avg_hours, color = Gender)) +
+  geom_point(na.rm = TRUE) +
+  geom_smooth(formula = y ~ x, method = lm, se = FALSE, na.rm = TRUE) +
   labs(title = "Relationship Between Anxiety Levels and Hours of Gaming",
        x = "GAD Assessment Score", y = "Average Hours of Gaming Per Week")

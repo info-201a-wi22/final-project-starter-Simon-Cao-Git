@@ -1,4 +1,4 @@
-df <- read.csv(file = 'data/GamingStudy_filtered.csv', stringsAsFactors = TRUE)
+df <- read.csv(file = '../data/GamingStudy_filtered.csv', stringsAsFactors = TRUE)
 
 library(ggplot2)
 library(dplyr)
@@ -30,7 +30,7 @@ totals <- total %>%
                              n == 1204 ~ 'mild',
                              TRUE~ 'minimal'))
 # this create a dataset of number of different levels and labels them
-ggplot(data = totals, aes(x = "", y = n, fill = anxietys))+
+pie_chart <- ggplot(data = totals, aes(x = "", y = n, fill = anxietys))+
   geom_bar(stat = "identity") + 
   labs(title = "anxiety levels of gamers in USA") +
   coord_polar("y") +
