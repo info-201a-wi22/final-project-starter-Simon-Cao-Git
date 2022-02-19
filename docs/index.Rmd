@@ -5,41 +5,6 @@ date: "1/22/2022"
 output: html_document
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
-
-```{r include=FALSE}
-# Example 1: Note relative path, which can be read: Up one
-# directory(..), down into source (/source), and 
-# then "source" an R file (data_access.R)
-source("../source/analysis.R")
-source("../source/aggregate_table.R")
-source("../source/chart-1_bar_graph.R")
-source("../source/chart-2.R")
-source("../source/chart3.R")
-```
-
-```{r summary}
-summary_info
-```
-
-```{r table}
-agg_table
-```
-
-```{r plot1, echo=FALSE}
-longer_data
-```
-
-```{r plot2, echo=FALSE}
-GAD_scatterplot
-```
-
-```{r plot3, echo=FALSE}
-pie_chart
-```
-
 # Head in the Game: Examining the Relationship Between Gaming and Mental Health
 
 **Code Name**
@@ -157,6 +122,60 @@ For policymakers, on the other hand, more restrictions could be applied to game 
 By examining the dataset, our group noticed that the data is mainly from male gamers; also, the gamers that participated in this survey are mainly younger generations and from the western countries.
 Also, as the dataset is mainly gathered from Reddit and the survey is voluntary, there might be unforeseen limitations to the survey population.
 As a result, the conclusion may not apply well to all players, especially female players, older generations, and players in other regions; thus, we need to be careful when making conclusions about gamers in general.
+
+## Exploratory Analysis of the Dataset
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+source("../source/analysis.R")
+source("../source/aggregate_table.R")
+source("../source/chart-1_bar_graph.R")
+source("../source/chart-2.R")
+source("../source/chart3.R")
+```
+
+The dataset we are using is based on self-reported data from Reddit survey respondents. We filtered this dataset to include only respondents who are currently residing in the United States. Men made up the overwhelming majority of respondents, with men outnumbering women and ‘Other’ survey takers by a proportion of `r summary_info$prop_men` to 1. The data set included respondents between the ages of 18 and 44 years old, though the average age was `r summary_info$avg_age` years old. Survey takers reported spending an average of `r summary_info$avg_time` hours spent either playing or watching games each week, though due to the nature of surveys it is possible that some respondents may have self-reported a number that is lower than reality. In addition, the majority of respondents preferred multiplayer online games, with `r summary_info$num_multiplayer` (out of 4,569 respondents) listing multiplayer games as their primary play-style. The most popular game among respondents was `r summary_info$most_popular_game`, which is not surprising given that this is an online multiplayer title. 
+Overall, mental health scores were within normal ranges. The average result on the Life Satisfaction questionnaire was `r summary_info$avg_satisfaction`, which corresponds to a "slightly below average" overall life satisfaction rating. The average anxiety and social phobia scores were `r summary_info$avg_anxiety` and `r summary_info$avg_phobia`, respectively, which translates to a “low-risk” result for both anxiety and social phobia. This would suggest a potentially neutral relationship between mental health and gaming, however it is not possible to draw any meaningful conclusions about this data set that can be applied to the broader gaming community. More research is needed to better understand the relationship between gaming and mental health. 
+
+
+```{r summary}
+summary_info
+```
+
+The following is a table grouped by gaming platforms and arranged in a descending order of the total player count. All numeric values are rounded to 2 decimal places. Noticiblely, players PC platform are the majority and spend the most time. Superisingly, it seems like they are also the group with the least mental health issues.
+
+```{r table}
+agg_table
+```
+
+The following bar chart gives answers to “Do different age groups matter with the relationship between gaming and anxiety.
+
+This bar chart has two parts. It plotted the GAD scores versus hours of gaming and the SWL scores versus hours of gaming. GAD stands for Generalized Anxiety Disorder, and is commonly used for examining anxiety. SWL stands for satisfaction with life; it was designed to measure global cognitive judgments of satisfaction with one's life. These two mental health assessments share one y-axis of score value. The possible range of SWL scores is 5-35, with a score of 20 representing a neutral point on the scale. Scores between 5-9 indicate the respondent is extremely dissatisfied with life, whereas scores between 31-35 indicate the respondent is extremely satisfied. This chart was made to illustrate the relationship between mental health and hours of gaming for different age groups of people. We can conclude from the chart that age is not the main factor that influences mental health conditions. People with the same amount of gaming hours have very similar anxiety and life satisfaction assessment scores regardless of their age. However, it did reveal that people with higher ages (36-44 years old) tend to have lower satisfaction in life even if they have the same amount of gaming hours as young people (18-35 years old). 
+
+
+```{r plot1, echo=FALSE}
+longer_data
+```
+
+The following scatter plot is about anxiety level(GAD) vs. hours gaming.
+
+This scatter plot was intended to demonstrate the relationship between anxiety levels and hours of games played per week, with respect to gender. Generalized Anxiety Disorder (GAD) Assessment scores were used to represent levels of anxiety. A score of 5-9 indicates mild anxiety, 10-14 indicates moderate anxiety and 15+ indicates severe anxiety. The hours of games played by everyone with a particular GAD score were averaged to give the average hours of games played per week. “Female”, “male”, and “other” were averaged and graphed separately. “Female” data points are colored red, “male” data points are colored green and “other” data points are colored blue, as shown in the key. The relationship between anxiety levels and gaming can be classified as positive for all gender categories, but none of the slopes are extremely positive. “Other” showed the strongest relationship with the greatest slope, meaning increasing anxiety levels are correlated with increasing hours of gaming. “Male” had a slightly less positive slope but “female” had the smallest correlation, with a slope of almost exactly zero. The regression line showed about a 2 hour increase from a GAD score of zero to a GAD score of 21, compared to an increase of roughly 10 hours for “other”.
+
+
+```{r plot2, echo=FALSE}
+GAD_scatterplot
+```
+
+The following pie chart is about gamers anxiety level proportion in USA.
+
+This pie chart sorts all the GAD survey scores into four parts, from anxiety level low to high: mild, minimal, moderate, severe.  It shows out of total gamers who took the GAD survey, the proportion of the anxiety level of the gamers. The chart shows that there are more gamers who have low anxiety levels than those who have high anxiety levels.
+
+
+```{r plot3, echo=FALSE}
+pie_chart
+```
+
+
 
 ## Acknowledgements
 

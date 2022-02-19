@@ -16,5 +16,7 @@ agg_table <- US_data %>%
             AverageGADScore = mean(GAD_T),
             AverageSWLScore = mean(SWL_T),
             AverageSPINScore = mean(SPIN_T, na.rm = TRUE)
-            )
+            ) %>% 
+  mutate(across(is.numeric, round, digits=2)) %>% 
+  arrange(desc(TotalPlayerCount))
 
