@@ -1,5 +1,7 @@
+
 # Summary Information Script 
-# By: Elora Hoberecht
+
+# Elora Hoberecht
 
 
                       ## Questions of Interest: ##
@@ -21,24 +23,23 @@ library("stringr")
 library("tidyverse")
 library("ggplot2")
 
-# The data set that we will be using:
-OG_df <- read.csv("~/INFO-201/Group_Project/P2/GamingStudy_data.csv")
+# Loading the data, filtering by US birthplace & residence, 
+# and filtering to include the most relevant columns.
 
-
-# Summary DF that stores the most relevant values: Gender, Age, Mental health scores, Preferred game, hours played each week, and play-style. 
-gaming_df <- OG_df %>%
-  filter(Residence == "USA", Birthplace == "USA") %>% #narrows data set, easier to work with & draw conclusions from
+gaming_df <- read.csv("~/INFO-201/Group_Project/P2/GamingStudy_data.csv") %>%
+  filter(Residence == "USA") %>% #narrows data set, easier to work with & draw conclusions from
   mutate("GAD_T" = (GAD1 + GAD2 + GAD3 + GAD4 + GAD5 + GAD6 + GAD7)) %>% # Total Anxiety Score
   mutate("SWL_T" = (SWL1 + SWL2 + SWL3 + SWL4 + SWL5)) %>% # Total Life Satisfaction score
   mutate("SPIN_T" = (SPIN1 + SPIN2 + SPIN3 + SPIN4 + SPIN5 + SPIN6 + SPIN7 + SPIN8 + 
-                     SPIN9 + SPIN10 + SPIN11 + SPIN12 + SPIN13 + SPIN14 + SPIN15 + SPIN16 + SPIN17)) %>% # Total Social Phobia Score
+                       SPIN9 + SPIN10 + SPIN11 + SPIN12 + SPIN13 + SPIN14 + SPIN15 + SPIN16 + SPIN17)) %>% # Total Social Phobia Score
   summarise(Gender, Age, GAD_T, SWL_T, SPIN_T, Game, streams, Hours, Playstyle)
+
 
   
 # Compute totals of male, female and 'other' genders.
   num_male <- sum(gaming_df$Gender == "Male")
   
-  # I put female and "other" responses together because there is so little data 
+  # Grouped female and "other" responses together because there is so little data 
   # and it was efficient for calculating proportion of men.
   num_other <- sum(gaming_df$Gender != "Male")  
   
@@ -55,6 +56,7 @@ gaming_df <- OG_df %>%
       filter(n == max(n)) %>%
       pull(Game) #League of Legends
   summary_info$num_multiplayer <- sum(grepl("Multi", gaming_df$Playstyle))
+  
   # The following computes avg mental health scores. 
   summary_info$avg_anxiety <- round(mean(gaming_df$GAD_T, na.rm = TRUE)) # Score < 8 = "low anxiety risk"
   summary_info$avg_satisfaction <- round(mean(gaming_df$SWL_T, na.rm = TRUE)) # Score < 20 = "Slightly below average"
