@@ -16,7 +16,7 @@ mild <- count(mild_anxiety)
 moderate <- count(moderate_anxiety)
 severe <- count(severe_anxiety)
 # this code counts number of groups of anxiety
-dats <- data %>%
+dats <- df %>%
   group_by(GAD_T) %>%
   mutate(anxiety = case_when(GAD_T > 14 ~ 'severe',
                              GAD_T > 9 ~ 'moderate',
