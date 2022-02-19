@@ -5,8 +5,6 @@ date: "1/22/2022"
 output: html_document
 ---
 
-# Head in the Game: Examining the Relationship Between Gaming and Mental Health
-
 **Code Name**
 
 **S.E.G.A** (**S**tudents **E**xploring **G**aming & **A**nxiety)

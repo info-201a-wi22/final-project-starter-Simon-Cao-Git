@@ -3,7 +3,8 @@
 **Head in the Game: Examining the Relationship Between Gaming and Mental Health**
 
 [*P01: Project Proposal*](./docs/p01-proposal.md)
-[*P02: Exploratory Analysis*](./docs/index.html)
+
+[*P02: Exploratory Analysis*](./docs/index.Rmd)
 
 
 |Project Directories | Brief Description|
