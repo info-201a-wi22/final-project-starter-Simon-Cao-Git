@@ -7,8 +7,9 @@ library("ggplot2")
 gamingStudy <- read.csv("data/GamingStudy_filtered.csv",
                         stringsAsFactors = FALSE)
 
-# Takes gamingStudy and makes a data frame by grouping by the GAD_T score and
-# averaging the number of hours played by people with each GAD score.
+# Takes gamingStudy and makes 3 data frames, 1 for each gender option. The data
+# frames are made by grouping by the GAD_T score and averaging the number of 
+# hours played by people with each GAD score.
 female <- gamingStudy %>%
   select(Hours, GAD_T, Gender) %>%
   filter(Gender == "Female") %>%
@@ -30,11 +31,12 @@ other <- gamingStudy %>%
   summarize(avg_hours = mean(Hours)) %>%
   mutate(Gender = "Other")
 
+# Full joins the three data frames separated by gender into one data frame
 all_genders <- full_join(female, male) %>%
   full_join(other)
 
 # Plots a scatter plot of the GAD assessment scores by the average hours of
-# games played
+# games played, colored by gender
 ggplot(all_genders, aes(x = GAD_T, y = avg_hours, color = Gender)) +
   geom_point() +
   geom_smooth(method = lm, se = FALSE) +
