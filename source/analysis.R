@@ -26,8 +26,8 @@ library("ggplot2")
 # Loading the data, filtering by US residence, 
 # and filtering to include the most relevant columns.
 
-gaming_df <- read.csv("~/INFO-201/Group_Project/P2/GamingStudy_data.csv") %>%
-  filter(Residence == "USA") %>%
+gaming_df <- read.csv("data/GamingStudy_filtered.csv",
+                      stringsAsFactors = FALSE) %>%
   summarise(Gender, Age, GAD_T, SWL_T, SPIN_T, Game, streams, Hours, Playstyle)
 
 
