@@ -11,7 +11,7 @@ tab_panel_report <- tabPanel(
     column(
       12,
       includeMarkdown("tabs/report.md"),
-      p("This is where Simon's work goes.")
+      p("This is where Elora's work goes.")
     )
   )
 )
