@@ -1,7 +1,10 @@
 # Final Project Repository
 **INFO-201: _Foundational Skills For Data Science_ (Winter 2022)**
+**Head in the Game: Examining the Relationship Between Gaming and Mental Health**
 
-*P01: Project Proposal*: [Project Proposal Title - Edit Me!](./docs/p01-proposal.md) 
+[*P01: Project Proposal*](./docs/p01-proposal.md)
+
+[*P02: Exploratory Analysis*](./docs/index.Rmd)
 
 
 |Project Directories | Brief Description|

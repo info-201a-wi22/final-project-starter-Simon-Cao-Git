@@ -1,4 +1,4 @@
-df <- read.csv(file = 'data/GamingStudy_filtered.csv', stringsAsFactors = TRUE)
+df <- read.csv(file = '../data/GamingStudy_filtered.csv', stringsAsFactors = TRUE)
 
 library(ggplot2)
 library(dplyr)
@@ -16,7 +16,7 @@ mild <- count(mild_anxiety)
 moderate <- count(moderate_anxiety)
 severe <- count(severe_anxiety)
 # this code counts number of groups of anxiety
-dats <- data %>%
+dats <- df %>%
   group_by(GAD_T) %>%
   mutate(anxiety = case_when(GAD_T > 14 ~ 'severe',
                              GAD_T > 9 ~ 'moderate',
@@ -30,7 +30,7 @@ totals <- total %>%
                              n == 1204 ~ 'mild',
                              TRUE~ 'minimal'))
 # this create a dataset of number of different levels and labels them
-ggplot(data = totals, aes(x = "", y = n, fill = anxietys))+
+pie_chart <- ggplot(data = totals, aes(x = "", y = n, fill = anxietys))+
   geom_bar(stat = "identity") + 
   labs(title = "anxiety levels of gamers in USA") +
   coord_polar("y") +

@@ -1,14 +1,9 @@
 library(tidyverse)
 library(dplyr)
-library(plyr)
 library(ggplot2)
 
-
-rm(list = ls())
-
 #Load data
-filename <- "https://raw.githubusercontent.com/info-201a-wi22/final-project-starter-Simon-Cao-Git/main/data/GamingStudy_filtered.csv"
-game <- read.csv(filename)
+game <- read.csv("../data/GamingStudy_filtered.csv")
 mydf <- select(game, GAD_T, SWL_T, Hours, Age)
 
 #Change Age into groups
@@ -46,6 +41,4 @@ longer_data <- mydf_grouped %>%
   scale_y_continuous(breaks = round(seq(min(mydf_grouped$GAD_T),
                                       max(mydf_grouped$SWL_T),
                                       by = 1), 1))
-#Print Bar chart
-print(longer_data)
 
