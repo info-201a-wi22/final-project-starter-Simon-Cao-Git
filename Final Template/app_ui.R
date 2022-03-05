@@ -5,6 +5,7 @@
 #
 
 library(shiny)
+library("shinythemes")
 
 source("tabs/tab_panel_intro.R") # We work on this file together
 source("tabs/tab_panel_chart1.R") # Lilah completes this file
@@ -15,24 +16,11 @@ source("tabs/tab_panel_report.R") # Elora completes this file
 
 # Define UI for final application
 ui <- navbarPage(
+    tags$style(type = "text/css", "body {padding-top: 70px;}"),
+    theme = shinytheme("slate"),
     title = "Project SEGA",
     position = "fixed-top",
-    
-    # Creates a simple header.
-    header = list(
-      tags$style(type = "text/css", "body {padding-top: 70px;}"),
-      hr(),
-      HTML("... Project Header... "),
-      hr()
-    ),
-    
-    # Creates a simple footer.
-    footer = list(
-      tags$style(type = "text/css", "body {padding-top: 70px;}"),
-      hr(),
-      HTML("... Project Footer... "),
-      hr()
-    ),
+   
     
     # Introduction
     tab_panel_intro, # Everyone
