@@ -16,10 +16,15 @@ source("tabs/tab_panel_report.R") # Elora completes this file
 
 # Define UI for final application
 ui <- navbarPage(
-    tags$style(type = "text/css", "body {padding-top: 70px;}"),
     theme = shinytheme("slate"),
     title = "Project SEGA",
     position = "fixed-top",
+    
+    # Simple Header
+      # TODO: Find alt fix for spacing issue
+    header = list(
+      tags$style(type = "text/css", "body {padding-top: 70px;}")
+    ),
    
     
     # Introduction
