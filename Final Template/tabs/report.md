@@ -38,7 +38,7 @@ We hope to better understand how mental health and gaming habits are connected. 
 
 **Human Values:**
 
-The human values most important to our group in this project include human welfare and identity. We understand that for a lot of people who play games, being a ‘gamer’ is an important identity and valuable social community where people find belonging. Additionally, we hope to better understand how gaming impacts mental health, to help future researchers, designers, and practitioners make more informed decisions when choosing what kinds of games to play or modifying their own gaming habits to improve their overall well-being.
+The human values most important to our group in this project include human welfare and identity. We understand that for a lot of people who play games, being a 'gamer' is an important personal identity with a valuable social community where manny people can find a sense of belonging. Additionally, we hope to better understand how gaming impacts mental health, to help future researchers, designers, and practitioners make more informed decisions when choosing what kinds of games to play or modifying their own gaming habits to improve their overall well-being.
 
 **Stakeholders:**
 
@@ -69,7 +69,7 @@ These questions are important because first, if we want to find valid data, we h
 Our group intends to use the following dataset:
 [Gaming Habits and Psychological Well-being: An international dataset about the Anxiety, Life Satisfaction and Social Phobia of over 13000 gamers](https://osf.io/vyr5f/).
 
-* The dataset contains about 13,000 data entries from gamers’ survey results. We have identified 13 main variables of interest for our project:
+* The dataset contains about 13,000 data entries from gamers' survey results. We have identified 13 main variables of interest for our project:
 
     **Variables of Interest**
 
@@ -102,7 +102,7 @@ Our group intends to use the following dataset:
 
 
 
-###### Who collected the data?
+#### *Who collected the data?*
 
   The data was collected in 2017 by 2 university researchers from Germany: Marian Sauter and Dejan Draschkow as part of a peer-reviewed research project.
 
@@ -110,46 +110,54 @@ Our group intends to use the following dataset:
 
 (Scene Grammar Lab, Goethe University Frankfurt, Frankfurt am Main, Germany)
 
-###### For what purpose was this dataset created?
+
+#### *For what purpose was this dataset created?*
 
   The dataset is gathered with a purpose of allowing more investigation into the relationship between excessive video game usage, well-being, and psychological disorders.
+  
 
-###### How was the data collection effort funded? Who is likely to benefit from the data or make money?
+#### *How was the data collection effort funded? Who is likely to benefit from the data or make money?*
 
 The authors declare that the research was conducted in the absence of any commercial or financial relationships that could be construed as a potential conflict of interest.
 
 
+
 ## 5.0 Findings  (about 400 words or less)
 
-After analyzing the data, we have made several observations related to our research questions.
+After analyzing the data, we have made several observations related to our research questions:
 
-###### How does gaming affect mental health?
-
-Words go here.
-
-###### Does age affect the relationship between gaming and mental health?
+#### How does gaming affect mental health?
 
 Words go here.
 
-###### How does gender affect the relationship between gaming and mental health?
+#### Does age affect the relationship between gaming and mental health?
 
 Words go here.
 
-###### Do different countries or environments affect the relationship between gaming and mental health?
+#### How does gender affect the relationship between gaming and mental health?
+
+Words go here.
+
+#### Do different countries or environments affect the relationship between gaming and mental health?
 
 Words go here.
 
 ## 6.0 Discussion  (about 400 words)
 
-New section. Discuss importance and/or implications of your findings.
+Our findings suggest that there may be a neutral relationship between gaming and mental health, which is important because this challenges the belief that gaming is psychologically harmful. Unfortunately, our dataset was limited in that the majority of respondents played multiplayer titles, specifically *League of Legends*, which is notorious for its toxic fanbase.  It is possible that our findings are not really related to gaming directly, but highlight the benefits of socialization and the sense of community that is available through this medium. Individuals who are socially isolated in the real-world may benefit from using online gaming as a way to establish relationships and build friendship with other people they wouldn't otherwise interact with. 
+
+The fact that respondents had a 'below average' life satisfaction score overall could indicate several possibilities; it may be that playing League of Legends has a poor effect on life satisfaction. It could also suggest that gaming negatively impacts life satisfaction, or perhaps those feeling unsatisfied with life are more likely to use gaming as a form of escapism. It is most probable, however, that there are other factors that influence both gaming habits and life satisfaction that were not measured in this dataset or revealed by our analysis.  This means our findings may not be applicable to the broader gaming community, but show an important area on which future research can focus. Additionally, we found it interesting that users were generally in the 'low-risk' category for social anxiety and general anxiety disorders-- it is possible that gaming can help relieve anxiety. Unfortunately, due to the limited sample population, we do not have enough information to establish a causal relationship, nor can we apply these findings to any real-world population beyond male League of Legend players in the United States. More research is needed to better understand the relationships between gaming and mental health. 
+
+### TODO: Analyze the visuals
+
 
 ## 7.0 Conclusion.  (about 100 words or less)
 
-New section. Give the reader a summary point, the key point that you will like your audience to leave with.
+### TODO: Give the reader a summary point, the key point that you will like your audience to leave with.
 
 ## Acknowledgements
 
-We would like to thank Marian Sauter and Dejan Draschkow for collecting the data and sharing it online for free– this project would not have been possible without their expansive data set and research efforts.
+We would like to thank Marian Sauter and Dejan Draschkow for collecting the data and sharing it online for free. This project would not have been possible without their expansive data set and research efforts.
 
 ## References
 
