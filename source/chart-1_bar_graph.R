@@ -1,10 +1,13 @@
 library(tidyverse)
 library(dplyr)
 library(ggplot2)
+library(RColorBrewer)
+#library("ggsci")
+#install.packages("ggsci")
 
 #Load data
-game <- read.csv("../data/GamingStudy_filtered.csv")
-mydf <- select(game, GAD_T, SWL_T, Hours, Age)
+game <- read.csv("../data/GamingStudy_filtered.csv", stringsAsFactors = FALSE)
+mydf <- select(game, GAD_T, SWL_T, SPIN_T, Hours, Age)
 
 #Change Age into groups
 mydf<- mydf %>% drop_na()
@@ -23,6 +26,41 @@ mydf_grouped <- mydf_grouped %>%
 # Drop NA values in hours group
 mydf_grouped <- mydf_grouped %>% drop_na()
 
+unique(game$Playstyle)
+
+# GAD graph
+ggplot(data = mydf_grouped, aes(x = hours, y = GAD_T, fill = age)) +
+  geom_bar(stat = "summary",
+           fun = "mean",
+           position = "dodge") +
+  labs(title = "Relationship between Anxiety and Hours of Gaming in different age group",
+       x = "Average Hours of Gaming Per Week",
+       y = "Average GAD Assessment Scores",
+       fill = "Age range") + 
+  theme(plot.title = element_text(hjust = 0.5, size =14)) +
+  scale_fill_brewer(palette = "Paired")
+  # scale_fill_jco()
+  #scale_fill_manual(values = c("#C3D7A4", "#4E84C4", "#FFDB6D"))
+
+#SWL graph
+ggplot(data = mydf_grouped, aes(x = hours, y = SWL_T, fill = age)) +
+  geom_bar(stat = "summary",
+           fun = "mean",
+           position = "dodge") +
+  labs(title = "Relationship between Life Satisifaction and Hours of Gaming in different age group",
+       x = "Average Hours of Gaming Per Week",
+       y = "Average SWL Assessment Scores",
+       fill = "Age range")
+
+#SPIN graph
+ggplot(data = mydf_grouped, aes(x = hours, y = SPIN_T, fill = age)) +
+  geom_bar(stat = "summary",
+           fun = "mean",
+           position = "dodge") +
+  labs(title = "Relationship between Social Phobia and Hours of Gaming in different age group",
+       x = "Average Hours of Gaming Per Week",
+       y = "Average SPIN Assessment Scores",
+       fill = "Age range")
 
 #Plot bar chart of DAG and SWL scores by the hours of gaming per week,
 #Grouped by three age groups
@@ -41,4 +79,4 @@ longer_data <- mydf_grouped %>%
   scale_y_continuous(breaks = round(seq(min(mydf_grouped$GAD_T),
                                       max(mydf_grouped$SWL_T),
                                       by = 1), 1))
-
+print(longer_data)
