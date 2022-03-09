@@ -2,6 +2,7 @@
 
 tab_panel_summary <- tabPanel(
   "Summary",
+  img(src = "game_brain.jpg", width = "100%", align = "center"),
   h1("Summary Takeaway"),
   fluidPage(
     p(
