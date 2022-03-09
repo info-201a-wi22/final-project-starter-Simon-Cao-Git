@@ -5,6 +5,10 @@ library(dplyr)
 library(ggplot2)
 library(tidyr)
 library(shinythemes)
+library(stringr)
+library(tibble)
+library(scales)
+library(shinyWidgets)
 
 
 game <- read.csv("../data/GamingStudy_filtered.csv", stringsAsFactors = FALSE)
