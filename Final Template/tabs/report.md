@@ -1,15 +1,16 @@
-# Head in the Game: Examining the Relationship Between Gaming and Mental Health
+<br>
+# Project Report
 
 
 **Authors**
 
-|Name|Email|
-|-|-|
+|Name |Email|
+|----|----|
 |Simon Cao |<purunc@uw.edu>|
 |Lilah Favour |<lfavour@uw.edu>|
 |Elora Hoberecht |<elorahob@uw.edu>|
 |Xuanyu Chen |<xuanyc2@uw.edu>|
-|Han Wang|<hanw27@uw.edu>|
+|Han Wang |<hanw27@uw.edu>|
 
 **Affiliation**
 
@@ -73,7 +74,7 @@ Our group intends to use the following dataset:
 
     **Variables of Interest**
 
-    |Variable[s]|   Type|     Explanation|
+    |Variable[s]|   Type |     Explanation|
     |---|---|---|
     |Hours|         num|       Hours played|
     |streams|       num|       Additional hours dealing with games except playing|
@@ -88,6 +89,8 @@ Our group intends to use the following dataset:
     |Work|          char|      Occupation status|
     |Degree|        char|      Highest degree|
     |Gender|        char|      Gender|
+
+    <br>
 
     The data is collected from 13464 gamers (12699 male, 713 female, 52 other) between 18 and 63 years. Participants resided in 109 different countries with most of the participants coming from the USA, Germany, the UK, and Canada. The participants responded to a call placed on Reddit and the survey was implemented in Google Forms. The surveys use industry-standard, scientifically validated assessments to gather mental health data, including:
 
@@ -114,46 +117,40 @@ Our group intends to use the following dataset:
 #### *For what purpose was this dataset created?*
 
   The dataset is gathered with a purpose of allowing more investigation into the relationship between excessive video game usage, well-being, and psychological disorders.
-  
+
 
 #### *How was the data collection effort funded? Who is likely to benefit from the data or make money?*
 
 The authors declare that the research was conducted in the absence of any commercial or financial relationships that could be construed as a potential conflict of interest.
 
+<br>
 
+## 5.0 Findings
 
-## 5.0 Findings  (about 400 words or less)
-
-After analyzing the data, we have made several observations related to our research questions:
+## After analyzing the data, we have made several observations related to our research questions:
 
 #### How does gaming affect mental health?
 
-Words go here.
+There appears to be a stronger relationship between hours spent gaming and risk of general and social anxiety disorders. We cannot establish a causal relationship from this data, but it was pretty clear that the more time players spent gaming, the worse they scored on these assessment tools. Conversely, spending fewer hours gaming was associated with a higher score on the Satisfaction With Life assessment. These findings are quite fascinating, but as mentioned, we cannot establish a causal relationship here-- it is entirely possible that both factors are influenced by a variable not considered in the dataset or in our project, but we cannot know for certain until more research is done in this area.
 
 #### Does age affect the relationship between gaming and mental health?
 
-Words go here.
+It is important to preface this analysis by acknowledging that the majority of respondents in this dataset are between 18 and 35 years old. We do not have sufficient data to make any claims about older populations (36+ years old) at this time. For respondents between the ages of 18 and 25, it is pretty clear that there is a negative correlation between mental health and hours spent gaming (respondents who reported spending more time gaming also had worse mental health scores). Interestingly, there was a similar trend observed for respondents between the ages of 26 and 35, but this seemed to peak at 40-60 hours/week-- respondents in this age group who reported spending more than 60 hours gaming each week had slightly better mental health scores. We are unsure why this pattern exists, and it is entirely possible that the lack of data in our dataset for this group could be contirbuting to this skew. Again, more research is needed to explore whether this pattern is legitimate and representative of the broader population.
 
 #### How does gender affect the relationship between gaming and mental health?
 
-Words go here.
+Based on the data we have available, there does not appear to be a strong correlation or pattern between gender and the relationship between gaming habits and mental health overall. Our data was limited in that it lacks sufficient data from non-male respondents. With that in mind, however, we did not observe a correlation with _any_ gender identity (male, female, or 'other'). More research is needed to determine if there is a relationship here.  <br>
 
-#### Do different countries or environments affect the relationship between gaming and mental health?
+## 6.0 Discussion
 
-Words go here.
+Our findings suggest that there may be a neutral relationship between gaming and mental health, which is important because this challenges the belief that gaming is psychologically harmful. Unfortunately, our dataset was limited in that the majority of respondents played multiplayer titles, specifically *League of Legends*, which is notorious for its toxic fanbase.  It is possible that our findings are not really related to gaming directly, but highlight the benefits of socialization and the sense of community that is available through this medium. Individuals who are socially isolated in the real-world may benefit from using online gaming as a way to establish relationships and build friendship with other people they wouldn't otherwise interact with.
 
-## 6.0 Discussion  (about 400 words)
-
-Our findings suggest that there may be a neutral relationship between gaming and mental health, which is important because this challenges the belief that gaming is psychologically harmful. Unfortunately, our dataset was limited in that the majority of respondents played multiplayer titles, specifically *League of Legends*, which is notorious for its toxic fanbase.  It is possible that our findings are not really related to gaming directly, but highlight the benefits of socialization and the sense of community that is available through this medium. Individuals who are socially isolated in the real-world may benefit from using online gaming as a way to establish relationships and build friendship with other people they wouldn't otherwise interact with. 
-
-The fact that respondents had a 'below average' life satisfaction score overall could indicate several possibilities; it may be that playing League of Legends has a poor effect on life satisfaction. It could also suggest that gaming negatively impacts life satisfaction, or perhaps those feeling unsatisfied with life are more likely to use gaming as a form of escapism. It is most probable, however, that there are other factors that influence both gaming habits and life satisfaction that were not measured in this dataset or revealed by our analysis.  This means our findings may not be applicable to the broader gaming community, but show an important area on which future research can focus. Additionally, we found it interesting that users were generally in the 'low-risk' category for social anxiety and general anxiety disorders-- it is possible that gaming can help relieve anxiety. Unfortunately, due to the limited sample population, we do not have enough information to establish a causal relationship, nor can we apply these findings to any real-world population beyond male League of Legend players in the United States. More research is needed to better understand the relationships between gaming and mental health. 
-
-### TODO: Analyze the visuals
+The fact that respondents had a 'below average' life satisfaction score overall could indicate several possibilities; it may be that playing League of Legends has a poor effect on life satisfaction. It could also suggest that gaming negatively impacts life satisfaction, or perhaps those feeling unsatisfied with life are more likely to use gaming as a form of escapism. It is most probable, however, that there are other factors that influence both gaming habits and life satisfaction that were not measured in this dataset or revealed by our analysis.  This means our findings may not be applicable to the broader gaming community, but show an important area on which future research can focus. Additionally, we found it interesting that users were generally in the 'low-risk' category for social anxiety and general anxiety disorders-- it is possible that gaming can help relieve anxiety. Unfortunately, due to the limited sample population, we do not have enough information to establish a causal relationship, nor can we apply these findings to any real-world population beyond male League of Legend players in the United States. More research is needed to better understand the relationships between gaming and mental health.
 
 
-## 7.0 Conclusion.  (about 100 words or less)
+## 7.0 Conclusion
 
-### TODO: Give the reader a summary point, the key point that you will like your audience to leave with.
+In conclusion, while most gamers reported minimal anxiety levels, it does appear that the more time spent playing games each week correlates to higher anxiety levels and lower overall satisfaction with life. This is not entirely surprising, as individuals with anxiety may feel more comfortable with virtual relationships that in-person connections. It is impossible to draw any significant conclusions about gender or establish a causal relationship between any of the studied datapoint due to the limitations with our dataset however, so more research is needed to more fully explore this subject.
 
 ## Acknowledgements
 
@@ -170,7 +167,3 @@ Granic, I., Lobel, A., & Engels, R. C. M. E. (2014). The benefits of playing vid
 Draschkow, D., & Sauter, M. (2017, October 30). Gaming habits and psychological well-being: An international dataset about the anxiety, life satisfaction and social phobia of over 13000 gamers. OSF. https://osf.io/vyr5f/
 
 Grinspoon, P., MD. (2020, December 22). The health effects of too much gaming. Harvard Health. https://www.health.harvard.edu/blog/the-health-effects-of-too-much-gaming-2020122221645
-
-## Appendix A: Relevant Materials
-
- ### TODO: Include the survey questions here.
