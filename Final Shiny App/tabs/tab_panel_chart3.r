@@ -7,7 +7,7 @@ radio_input <- radioButtons(inputId = "radio",
 
 tab_panel_chart3 <- tabPanel(
   "U.S. Distribution",
-  "Anxiety and social phobia levels of gamers in USA",
+  h3("Anxiety and social phobia levels of gamers in USA"),
   sidebarLayout(
     sidebarPanel(
       radio_input

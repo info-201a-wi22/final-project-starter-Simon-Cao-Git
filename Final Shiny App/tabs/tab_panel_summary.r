@@ -2,18 +2,18 @@
 
 tab_panel_summary <- tabPanel(
   "Summary",
-  img(src = "game_brain.jpg", width = "75%", align = "center"),
-  h1("Summary Takeaway"),
+  img(src = "game_brain.png", width = "100%", align = "center"),
+  h3("Summary Takeaway"),
   fluidPage(
     p(
       "In this project, we focused on the topic of the relationship between",
       em("video games and mental health issues in the United States. ")
     ),
     p("Circling around our 3 main research questions: "),
-    p(strong("Is there a relationship between hours played and mental
+    tags$li(strong("Is there a relationship between hours played and mental
            health scores?")),
-    p(strong("How does age impact gaming habits & mental health?")),
-    p(strong("How does gender impact gaming habits & mental health?")),
+    tags$li(strong("How does age impact gaming habits & mental health?")),
+    tags$li(strong("How does gender impact gaming habits & mental health?")),
     div(
       p("we do find 4 main takeaways."),
       p("We find that data shows most gamer in United States do not have

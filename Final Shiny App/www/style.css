@@ -1,0 +1,22 @@
+@import url('http://fonts.cdnfonts.com/css/sega-logo-font');
+
+.navbar-default {
+    background-color: lightgrey;
+    font-family: 'SEGA LOGO FONT', sans-serif;
+}
+
+p {
+  font-family: 'Times New Roman', sans-serif;
+}
+
+h3 {
+  font-style: bold;
+  color: #17569b;
+}
+
+li {
+  list-style-type: circle;
+}
+
+
+

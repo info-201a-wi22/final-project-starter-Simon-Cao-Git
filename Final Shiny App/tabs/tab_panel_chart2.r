@@ -28,5 +28,5 @@ page_two_mainpanel <- mainPanel(
 
 tab_panel_chart2 <- tabPanel(
   "Age Influence",
-  h1("How age influence gamers' Mental Health"),
+  h3("How age influence gamers' Mental Health"),
   sidebarLayout(page_two_sidepanel, page_two_mainpanel))

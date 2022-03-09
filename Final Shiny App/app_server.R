@@ -3,7 +3,7 @@ server <- function(input, output) {
   
   # Chart 1
   
-  gamingStudy <- read.csv("../data/GamingStudy_filtered.csv", stringsAsFactors = FALSE)
+  gamingStudy <- read.csv("data/GamingStudy_filtered.csv", stringsAsFactors = FALSE)
   output$scatterplot <- renderPlotly({
     # Takes gamingStudy and makes 3 data frames, 1 for each gender option. The data
     # frames are made by grouping by the GAD_T score and averaging the number of 
@@ -46,7 +46,7 @@ server <- function(input, output) {
   
   # Chart 2
   
-  game <- read.csv("../data/GamingStudy_filtered.csv", stringsAsFactors = FALSE)
+  game <- read.csv("data/GamingStudy_filtered.csv", stringsAsFactors = FALSE)
   mydf <- select(game, GAD_T, SWL_T, SPIN_T, Hours, Age)
   
   #Change Age into groups
@@ -90,7 +90,7 @@ server <- function(input, output) {
   
   
   # Chart 3
-  df <- read.csv("../data/GamingStudy_filtered.csv", stringsAsFactors = FALSE)
+  df <- read.csv("data/GamingStudy_filtered.csv", stringsAsFactors = FALSE)
   
   minimal_anxiety <- filter(df, GAD_T >= 0 & GAD_T <= 4)
   mild_anxiety <- filter(df, GAD_T > 4 & GAD_T <= 9)

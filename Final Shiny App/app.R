@@ -11,6 +11,7 @@ library(scales)
 library(shinyWidgets)
 library(shinythemes)
 library(plotly)
+library(markdown)
 
 source("app_ui.R")
 source("app_server.R")

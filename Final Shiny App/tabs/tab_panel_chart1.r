@@ -10,7 +10,8 @@ select_test <- selectInput(
 )
 
 tab_panel_chart1 <- tabPanel(
-  "Gender Differences",
+  "Gender and Time Influences",
+  h3("How genders and time spent on gaming influence gamers' Mental Health"),
   sidebarLayout(
     sidebarPanel(
       select_test,

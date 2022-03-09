@@ -1,25 +1,21 @@
-source("tabs/tab_panel_intro.R") # We work on this file together
-source("tabs/tab_panel_chart1.R") # Lilah completes this file
-source("tabs/tab_panel_chart2.R") # Xuanyu completes this file
-source("tabs/tab_panel_chart3.R") # Han completes this file
-source("tabs/tab_panel_summary.R") # Simon completes this file
-source("tabs/tab_panel_report.R") # Elora completes this file
+source("tabs/tab_panel_intro.r") # We work on this file together
+source("tabs/tab_panel_chart1.r") # Lilah completes this file
+source("tabs/tab_panel_chart2.r") # Xuanyu completes this file
+source("tabs/tab_panel_chart3.r") # Han completes this file
+source("tabs/tab_panel_summary.r") # Simon completes this file
+source("tabs/tab_panel_report.r") # Elora completes this file
 
 # Define UI for final application
-ui <- navbarPage(
-    theme = shinytheme("slate"),
-    title = span(strong("Project SEGA", style = "color: #CD5C5C; font-size: 30px")),
-    position = "fixed-top",
-
-    header = list(
-      tags$style(type = "text/css", "body {padding-top: 70px;}")
-    ),
-   
+ui <- fluidPage(
+  includeCSS("www/style.css"),
+  navbarPage(
+    title = span("Project SEGA", style = "color: #17569b"),
     
     # Introduction
-    tab_panel_intro, 
+    tab_panel_intro, # Everyone
     
     # Three Charts
+    
     tab_panel_chart3, # Han
     tab_panel_chart2, # Xuanyu
     tab_panel_chart1, # Lilah
@@ -29,4 +25,5 @@ ui <- navbarPage(
     
     # Project Report
     tab_panel_report # Elora
+  )
 )
