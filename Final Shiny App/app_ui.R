@@ -8,7 +8,7 @@ source("tabs/tab_panel_report.R") # Elora completes this file
 # Define UI for final application
 ui <- navbarPage(
     theme = shinytheme("slate"),
-    title = "Project SEGA",
+    title = span(strong("Project SEGA", style = "color: #CD5C5C; font-size: 30px")),
     position = "fixed-top",
 
     header = list(
@@ -17,12 +17,12 @@ ui <- navbarPage(
    
     
     # Introduction
-    tab_panel_intro, # Everyone
+    tab_panel_intro, 
     
     # Three Charts
-    tab_panel_chart1, # Lilah
-    tab_panel_chart2, # Xuanyu
     tab_panel_chart3, # Han
+    tab_panel_chart2, # Xuanyu
+    tab_panel_chart1, # Lilah
     
     # Project summary
     tab_panel_summary, # Simon
