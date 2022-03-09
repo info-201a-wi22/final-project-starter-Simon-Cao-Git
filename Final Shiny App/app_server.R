@@ -81,7 +81,7 @@ server <- function(input, output) {
                position = "dodge") +
       labs(title = "Relationship between Mental Health and Hours of Gaming in different age group",
            x = "Average Hours of Gaming Per Week",
-           y = "Average GAD Assessment Scores",
+           y = "Average Assessment Scores",
            fill = "Age range") + 
       theme(plot.title = element_text(hjust = 0.5, size = 16)) +
       scale_fill_brewer(palette = "Paired")
