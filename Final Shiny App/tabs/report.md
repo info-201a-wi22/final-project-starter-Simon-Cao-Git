@@ -1,6 +1,5 @@
 <br>
-# Project Report
-
+# S.E.G.A. Project Report
 
 **Authors**
 
@@ -27,11 +26,11 @@ Our main question is what is the relationship between gaming and mental health, 
 ## Keywords
 Anxiety, Mental Health, Online Gaming, Psychology, Videogames
 
-## Introduction
+## 1.0 Introduction
 Despite the rapid advancement of technology and online environments in many aspects of our daily lives, video games are continuing to develop exponentially, and gaming communities are also growing. Along with being fun and entertaining, gaming can help people connect with each other, creating a sense of community as they work together to complete common tasks. Half of all Americans, 164 million people, play video games, also called gaming. Gaming isn't just for teens, as popular belief would have you believe. According to a survey in 2019, only 21% of gamers were under 18 years old (Grinspoon, 2020). However, despite the benefits of gaming (even as it becomes a competitive sport on many college campuses), too much gaming is linked to health risks, and mental health issues arise among this growing body of diverse gamers.
 In this project, we are going to perform an analysis based on results from a series of questions, and also try to ravel out the relationship between the gaming habits of gamers and the latent mental health issues.
 
-## Design Situation
+## 2.0 Design Situation
 
 **Project Framing:**
 
@@ -52,7 +51,7 @@ Harms: It would not be a stretch to imagine scenarios in which the information i
 
 Benefits: This data may benefit people struggling with mental health disorders. We hope that our findings can benefit those struggling with mental health disorders or suffering with the effects of social isolation. Our findings may inform mental health practitioners on the ways in which gaming can be a tool to help mitigate the symptoms of these disorders, or inspire parents to enforce healthy gaming habits with children and adolescents.
 
-## Research questions
+## 3.0 Research questions
 
 Through exploring and analyzing data from this dataset, we hope to answer the following questions:
 
@@ -66,7 +65,7 @@ Through exploring and analyzing data from this dataset, we hope to answer the fo
 
 These questions are important because first, if we want to find valid data, we have to think about different groups. For example, an answer might work for one group but not for another. After collecting datas using the survey, it is important to separate the data using different groups of people, so we can find if there is any pattern. Also, there might be different answers for different groups, too, for example, one age group might think that online gaming gives them anxiety and another might not.
 
-## The Dataset
+## 4.0 The Dataset
 Our group intends to use the following dataset:
 [Gaming Habits and Psychological Well-being: An international dataset about the Anxiety, Life Satisfaction and Social Phobia of over 13000 gamers](https://osf.io/vyr5f/).
 
