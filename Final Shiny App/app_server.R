@@ -1,19 +1,10 @@
-library(shiny)
-library(tidyverse)
-library(dplyr)
-library(ggplot2)
-library(tidyr)
-library(shinythemes)
-
-library(shiny)
-
 # Define server logic
 server <- function(input, output) {
   
   # Chart 1
   
   gamingStudy <- read.csv("../data/GamingStudy_filtered.csv", stringsAsFactors = FALSE)
-  output$scatterplot <- renderPlot({
+  output$scatterplot <- renderPlotly({
     # Takes gamingStudy and makes 3 data frames, 1 for each gender option. The data
     # frames are made by grouping by the GAD_T score and averaging the number of 
     # hours played by people with each GAD score.  
@@ -49,7 +40,7 @@ server <- function(input, output) {
       labs(title = "Relationship Between Anxiety Levels and Hours of Gaming",
            x = "Assessment Score", y = "Average Hours of Gaming Per Week")
     
-    return(scatterplot)
+    return(ggplotly(scatterplot))
   })
   
   
@@ -75,13 +66,13 @@ server <- function(input, output) {
   # Drop NA values in hours group
   mydf_grouped <- mydf_grouped %>% drop_na()
   
-  output$age <- renderPlot({
+  output$age <- renderPlotly({
     age_df <- mydf_grouped %>%
       filter(age %in% input$checkGroup)
     #filter(age == input$checkGroup)
     #filter(mydf$input$checkGroup)
     #line_df <- line_df[line_df$variable %in% input$checkGroup]
-    p <- ggplot(data = age_df, aes(x = hours, y = .data[[input$test]], fill = age
+    p <- ggplot(data = age_df, aes(x = hours, y = .data[[input$test_visual2]], fill = age
                                    #, fill = variable
                                    #, fill = input$checkGroup
     )) +
@@ -94,12 +85,13 @@ server <- function(input, output) {
            fill = "Age range") + 
       theme(plot.title = element_text(hjust = 0.5, size = 16)) +
       scale_fill_brewer(palette = "Paired")
-    p
+    ggplotly(p)
   })
   
   
   # Chart 3
   df <- read.csv("../data/GamingStudy_filtered.csv", stringsAsFactors = FALSE)
+  
   minimal_anxiety <- filter(df, GAD_T >= 0 & GAD_T <= 4)
   mild_anxiety <- filter(df, GAD_T > 4 & GAD_T <= 9)
   moderate_anxiety <- filter(df, GAD_T > 9 & GAD_T <= 14)
@@ -214,6 +206,11 @@ server <- function(input, output) {
               position = position_stack(vjust = 0.5)) +
     theme_void()
   
+  plot_ly(data=totals,labels=~anxietys, values=~n, type="pie") %>% 
+    layout(title = 'United States Music Genre Prevalent in 1999',
+           xaxis = list(showgrid = FALSE, zeroline = FALSE, showticklabels = FALSE),
+           yaxis = list(showgrid = FALSE, zeroline = FALSE, showticklabels = FALSE))
+  
   pie_schart <- ggplot(data = sss, aes(x = "", y = n, fill = anxietys))+
     geom_bar(stat = "identity") + 
     labs(title = "social phobia levels of gamers in USA") +
@@ -225,41 +222,29 @@ server <- function(input, output) {
   
   pie_swlchart <- ggplot(data = sswl, aes(x = "", y = n, fill = satisfaction))+
     geom_bar(stat = "identity") + 
-    labs(title = "sattifection level of gamers in USA") +
+    labs(title = "satifection level of gamers in USA") +
     coord_polar("y") +
     geom_col() +
     geom_text(aes(label = labels),
               position = position_stack(vjust = 0.5)) +
     theme_void() 
   
-  output$piechart <- renderPlot({
+  output$piechart <- renderPlotly({
     if(input$radio == "sp"){
-      plot <- ggplot(data = sss, aes(x = "", y = n, fill = anxietys))+
-        geom_bar(stat = "identity") + 
-        labs(title = "social phobia levels of gamers in USA") +
-        coord_polar("y") +
-        geom_col() +
-        geom_text(aes(label = labels),
-                  position = position_stack(vjust = 0.5)) +
-        theme_void()
+      plot <- plot_ly(data=sss,labels=~anxietys, values=~n, type="pie") %>% 
+        layout(title = 'social phobia levels of gamers in USA',
+               xaxis = list(showgrid = FALSE, zeroline = FALSE, showticklabels = FALSE),
+               yaxis = list(showgrid = FALSE, zeroline = FALSE, showticklabels = FALSE))
     } else if(input$radio == "anxiety") {
-      plot <- ggplot(data = totals, aes(x = "", y = n, fill = anxietys))+
-        geom_bar(stat = "identity") +
-        labs(title = "anxiety levels of gamers in USA") +
-        geom_col() +
-        coord_polar("y") +
-        geom_text(aes(label = labels),
-                  position = position_stack(vjust = 0.5)) +
-        theme_void()
+      plot <- plot_ly(data=totals,labels=~anxietys, values=~n, type="pie") %>% 
+        layout(title = 'anxiety levels of gamers in USA',
+               xaxis = list(showgrid = FALSE, zeroline = FALSE, showticklabels = FALSE),
+               yaxis = list(showgrid = FALSE, zeroline = FALSE, showticklabels = FALSE))
     } else {
-      plot <- ggplot(data = sswl, aes(x = "", y = n, fill = satisfaction))+
-        geom_bar(stat = "identity") + 
-        labs(title = "satisfaction level of gamers in USA") +
-        coord_polar("y") +
-        geom_col() +
-        geom_text(aes(label = labels),
-                  position = position_stack(vjust = 0.5)) +
-        theme_void() 
+      plot <- plot_ly(data=sswl,labels=~satisfaction, values=~n, type="pie") %>% 
+        layout(title = 'satisfaction level of gamers in USA',
+               xaxis = list(showgrid = FALSE, zeroline = FALSE, showticklabels = FALSE),
+               yaxis = list(showgrid = FALSE, zeroline = FALSE, showticklabels = FALSE))
     }
     return(plot)
   })

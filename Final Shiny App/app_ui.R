@@ -1,12 +1,3 @@
-#
-# This is the template Professor Hendry provided during lecture on 02/23. 
-#   He specifically recommended this template for group collaboration and said
-#   it was okay to use this template for the final deliverable.
-#
-
-library(shiny)
-library("shinythemes")
-
 source("tabs/tab_panel_intro.R") # We work on this file together
 source("tabs/tab_panel_chart1.R") # Lilah completes this file
 source("tabs/tab_panel_chart2.R") # Xuanyu completes this file
