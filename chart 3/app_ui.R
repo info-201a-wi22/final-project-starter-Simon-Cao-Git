@@ -10,13 +10,13 @@ radio_input <- radioButtons(inputId = "radio",
                             selected = "sp")
 
 chart_page <- tabPanel(
-  "Chart Page",
+  "General distribution",
   sidebarLayout(
     sidebarPanel(
      radio_input
     ),
     mainPanel(plotOutput("piechart"), 
-              p("purpose: it to see the distribution of gamers' anxiety level in US."))
+              p("These charts can provide general information of distributions of gamers' anxiety level, social phobia level, and satisfaction level of their lives in US. Audiences can choose which graph to view by using the radio bottons. In the chart, we devide the different scores of the survey into several different levels to give a clear understanding of the distribution levels of gamers in US."))
   )
 )
 
