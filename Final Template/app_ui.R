@@ -19,9 +19,7 @@ ui <- navbarPage(
     theme = shinytheme("slate"),
     title = "Project SEGA",
     position = "fixed-top",
-    
-    # Simple Header
-      # TODO: Find alt fix for spacing issue
+
     header = list(
       tags$style(type = "text/css", "body {padding-top: 70px;}")
     ),
